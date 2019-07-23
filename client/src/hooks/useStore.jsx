@@ -5,7 +5,7 @@ import { useTodos } from './useTodos';
 export const useStore = () => {
 	const [ testKeyValue, getKeyValue, setKeyValue ] = useLocalStorage('todos');
 	const initialState = () => (testKeyValue() ? getKeyValue() : []);
-	const [ state, addTodo, editTodo, removeTodo ] = useTodos(initialState);
+	const [ state, addTodo, editTodo, removeTodo ] = useTodos(initialState());
 
 	useEffect(
 		() => {

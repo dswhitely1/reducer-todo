@@ -28,7 +28,7 @@ export const useTodos = initialState => {
 	const addTodo = todo => {
 		const newTodo = {
 			id       : Date.now(),
-			todo,
+			todo : Object.values(todo).join(''),
 			complete : false,
 		};
 		dispatch({

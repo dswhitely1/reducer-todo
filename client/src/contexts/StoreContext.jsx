@@ -2,4 +2,4 @@ import { createContext } from 'react';
 
 export const StoreContext = createContext({});
 
-export const StoreProvider = StoreContext.Provier;
+export const StoreProvider = StoreContext.Provider;
