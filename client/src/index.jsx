@@ -9,7 +9,11 @@ import './styles/index.scss';
 
 // TodoApplication
 
-const todoApplication = <Router><App /></Router>;
-const rootDocument    = document.getElementById( 'root' );
+const todoApplication = (
+	<Router>
+		<App />
+	</Router>
+);
+const rootDocument = document.getElementById('root');
 
-render( todoApplication, rootDocument );
+render(todoApplication, rootDocument);
