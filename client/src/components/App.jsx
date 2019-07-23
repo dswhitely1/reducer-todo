@@ -2,6 +2,7 @@ import React from 'react';
 import { StoreProvider } from '../contexts/StoreContext';
 import { useStore } from '../hooks/useStore';
 import Navigation from './navigation/Navigation';
+import Task from './tasks/Task';
 
 function App() {
   const [state, addTask, editTask, deleteTask] = useStore();
@@ -14,6 +15,7 @@ function App() {
       deleteTask
     }}>
       <Navigation addTask={addTask} />
+      <Task />
     </StoreProvider>
   );
 }

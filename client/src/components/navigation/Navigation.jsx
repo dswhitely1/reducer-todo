@@ -13,7 +13,7 @@ import {
 
 function Navigation( {values} ) {
   return (
-    <Navbar bg="secondary" expand="lg">
+    <Navbar bg="secondary" expand="lg" className="navStyle">
       <Navbar.Brand>Digital Solutions By Don</Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="#">Home</Nav.Link>
