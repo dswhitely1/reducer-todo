@@ -4,6 +4,7 @@ import {
   Container,
   Row
 } from 'react-bootstrap';
+import TaskForm from './TaskForm';
 import TaskList from './TaskList'
 
 function Task() {
@@ -14,7 +15,7 @@ function Task() {
           <TaskList />
         </Col>
         <Col md={5}>
-          <h1>Form</h1>
+          <TaskForm />
         </Col>
       </Row>
     </Container>
