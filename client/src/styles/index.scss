@@ -1,0 +1,14 @@
+$primary: #62C2CC;
+$secondary: #FDB813;
+$light: #E4F6F8;
+$dark: #222222;
+
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background-color: $light;
+}
+
+.navStyle {
+  clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
